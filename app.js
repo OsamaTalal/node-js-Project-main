@@ -38,15 +38,6 @@ app.get("/", (req, res) => {
 });
 
 
-// result ==> Object
-app.get("/user/:id", (req, res) => {
-  User.findById(req.params.id)
-  .then((result) => {   res.render("user/view",{obj: result});
-  }).catch((err) => {
-    console.log(err);
-   })
-
-});
 
 
 
@@ -88,6 +79,20 @@ app.post("/user/add.html", (req, res) => {
       console.log(err);
     });
 });
+
+// result ==> Object
+app.get("/user/:id", (req, res) => {
+  User.findById(req.params.id)
+  .then((result) => {   res.render("user/view",{obj: result});
+  }).catch((err) => {
+    console.log(err);
+   })
+
+});
+
+
+
+
 
 mongoose
   .connect(
