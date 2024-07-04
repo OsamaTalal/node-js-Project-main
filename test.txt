@@ -3,30 +3,50 @@ model.find() == => to get all data from DB
 model.findById("ddddddddddd")
 
 [
-
   {
-    _id: new ObjectId("64c084e1ba1c09af7a125c58"),
-    fireName: 'ali',
-    lastName: 'hassan',
-    email: 'ali@gmail.com',
-    phoneNumber: '58500000000',
-    age: 25,
-    country: 'Morocco',
+    _id: new ObjectId("6683b0458141a68c7bd85c0f"),
+    fireName: 'Osama',
+    lastName: 'Ali',
+    email: 'osamatalal744@gmail.com',
+    phoneNumber: '05318618003',
+    age: 22,
+    country: 'Egypt',
     gender: 'Male',
     __v: 0
   },
-
   {
-    _id: new ObjectId("64c08537ba1c09af7a125c5a"),
-    fireName: 'salma',
-    lastName: 'hassan',
-    email: 'salma@gmail.com',
-    phoneNumber: '54816102',
-    age: 20,
+    _id: new ObjectId("668475a1864e945c61ab1f47"),
+    fireName: 'TALAL',
+    lastName: 'ABDELMAKSOUD',
+    email: 'osamatalal744@gmail.com',
+    phoneNumber: '05318618003',
+    age: 22,
     country: 'Egypt',
-    gender: 'Female',
+    gender: 'Male',
+    __v: 0
+  },
+  {
+    _id: new ObjectId("66852f43ba6c4ac636445243"),
+    fireName: 'Osama',
+    lastName: 'Ali',
+    email: 'osamatalal744@gmail.com',
+    phoneNumber: '05318618003',
+    age: 27,
+    country: 'Egypt',
+    gender: 'Male',
+    __v: 0
+  },
+  {
+    _id: new ObjectId("66865c19472ff026f84566d7"),
+    fireName: 'Layla',
+    lastName: 'Ali',
+    email: 'osamatalal744@gmail.com',
+    phoneNumber: '05318618003',
+    age: 17,
+    country: 'Egypt',
+    gender: 'Male',
+    createdAt: 2024-07-04T08:23:53.687Z,
+    updatedAt: 2024-07-04T08:23:53.687Z,
     __v: 0
   }
-
-  
 ]

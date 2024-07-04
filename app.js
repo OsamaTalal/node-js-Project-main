@@ -6,6 +6,7 @@ app.use(express.urlencoded({ extended: true }));
 const User = require("./models/customerSchema");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+var moment = require('moment');
 
 // Auto refresh
 const path = require("path");
@@ -28,7 +29,8 @@ app.get("/", (req, res) => {
   console.log("--------------------------------------------")
   User.find()
     .then((result) => {
-      res.render("index", { arr: result });
+      console.log(result);
+      res.render("index", { arr: result, moment: moment});
     })
     .catch((err) => {
       console.log(err);
@@ -83,8 +85,9 @@ app.post("/user/add.html", (req, res) => {
 // result ==> Object
 app.get("/user/:id", (req, res) => {
   User.findById(req.params.id)
-  .then((result) => {   res.render("user/view",{obj: result});
-  }).catch((err) => {
+  .then((result) => {   res.render("user/view",{obj: result, moment: moment});
+  })
+  .catch((err) => {
     console.log(err);
    })
 
