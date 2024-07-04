@@ -2,6 +2,9 @@ model.save() == to send data to DB
 model.find() == => to get all data from DB
 model.findById("ddddddddddd")
 
+model.findByIdDelete("")
+
+
 [
   {
     _id: new ObjectId("6683b0458141a68c7bd85c0f"),
