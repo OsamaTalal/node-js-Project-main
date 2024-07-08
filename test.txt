@@ -1,3 +1,5 @@
+model.create() ==> To send data to data Base 
+
 model.save() == to send data to DB
 model.find() == => to get all data from DB
 model.findById("ddddddddddd")
